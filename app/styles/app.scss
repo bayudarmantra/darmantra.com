@@ -8,3 +8,30 @@
 .file-manager-wrapper{
   padding-top: 50px;
 }
+
+.file-option,
+.global-option{
+  @include inline-list(15px);
+}
+
+.file-option li,
+.cs-breadcrumb li{
+  display: inline;
+}
+
+.global-option li{
+  display: inline-block;
+}
+
+.cs-breadcrumb{
+  @include inline-list(20px);
+  .active{
+    position: relative;
+    &::before{
+      content: '\f105';
+      font-family: FontAwesome;
+      position: absolute;
+      left: -14px;
+    }
+  }
+}
