@@ -20,5 +20,8 @@ module.exports = function(defaults) {
     destDir: 'fonts'
   });
 
+  /*Moment Js*/
+  app.import(app.bowerDirectory + '/moment/min/moment-with-locales.js');
+
   return app.toTree();
 };
